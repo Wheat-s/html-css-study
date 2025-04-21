@@ -1,0 +1,64 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode 生成的构建文件和派生数据
+build/
+DerivedData/
+
+# 用户特定的 Xcode 设置
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Swift 编译相关文件
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+Package.resolved
+Package.pins
+Packages/
+
+# CocoaPods（根据需要选择是否忽略）
+Pods/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Accio
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/*.env
+
+# Code Injection
+iOSInjectionProject/
+
+# 日志和临时文件
+*.log
+*.tmp
+*.swp
+
+# 其他不需要的文件
+*.moved-aside
+*.memgraph
