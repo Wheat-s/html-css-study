@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card-container">
+      <div>
+        <!-- 一个输入框，用于输入新的待办事项。 -->
+        <div class="input-container">
+          <input type="text" name="todo" id="todo-input" />
+          <!-- 一个添加按钮，点击后将输入的事项添加到列表中。 -->
+          <button type="button" id="add-button">添加</button>
+        </div>
+        <!-- 一个容器，用于显示所有的待办事项。 -->
+        <div id="todo-list">
+          <ul id="todo-list">
+            <!-- 待办事项将以列表项（<li>）的形式添加到这里 -->
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- 引入js -->
+    <script src="app.js"></script>
+  </body>
+</html>
