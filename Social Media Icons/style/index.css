@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* 引入Google字体Poppins */
+* {
+    margin: 0; /* 重置外边距 */
+    padding: 0; /* 重置内边距 */
+    box-sizing: border-box; /* 盒模型设置为border-box */
+    font-family: 'Poppins',sans-serif; /* 设置全局字体 */
+}
+html, body {
+    display: grid; /* 使用网格布局 */
+    height: 100vh; /* 高度为视口高度 */
+    width: 100vw; /* 宽度为视口宽度 */
+    place-items: center;  /* 居中对齐内容 */
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 94%); /* 背景渐变色 */
+}
+
+.wrapper .button {
+    display: inline-block; /* 行内块元素 */
+    height: 60px; /* 高度60px */
+    width: 60px; /* 宽度60px */
+    float: left; /* 左浮动 */
+    text-decoration: none; /* 去除下划线 */
+    margin: 0 5px; /* 水平外边距5px */
+    overflow: hidden; /* 内容溢出隐藏 */
+    background: #fff; /* 背景色白色 */
+    border-radius: 50px; /* 圆角50px */
+    cursor: pointer; /* 鼠标为指针 */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    transition: all 0.3s ease-out; /* 过渡动画 */
+}
+
+.wrapper .button:hover {
+    width: 200px; /* 鼠标悬停时宽度变为200px */
+}
+
+.wrapper .button .icon {
+    display: inline-block; /* 行内块元素 */
+    height: 60px; /* 高度60px */
+    width: 60px; /* 宽度60px */
+    color: #000; /* 文字颜色黑色 */
+    text-align: center; /* 文字居中 */
+    border-radius: 50px; /* 圆角50px */
+    box-sizing: border-box; /* 盒模型为border-box */
+    line-height: 60px; /* 行高60px */
+    transition: all 0.3s ease-out; /* 过渡动画 */
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2; /* 第1个按钮悬停时图标背景色 */
+}
+.wrapper .button:nth-child(2):hover .icon {
+    background: #1DA1F2; /* 第2个按钮悬停时图标背景色 */
+}
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C; /* 第3个按钮悬停时图标背景色 */
+}
+.wrapper .button:nth-child(4):hover .icon {
+    background: #333; /* 第4个按钮悬停时图标背景色 */
+}
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000; /* 第5个按钮悬停时图标背景色 */
+}
+
+.wrapper .button .iocn i {
+    font-size: 25px; /* 图标字体大小 */
+    line-height: 60px; /* 行高60px */
+    transition: all 0.3s ease-out; /* 过渡动画 */
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff; /* 悬停时图标颜色变白 */
+}
+
+.wrapper .button span {
+    font-size: 20px; /* 文字大小20px */
+    font-weight: 500; /* 字重500 */
+    line-height: 60px; /* 行高60px */
+    margin-left: 10px; /* 左边距10px */
+    transition: all 0.3s ease-out; /* 过渡动画 */
+}
+
+.wrapper .button:nth-child(1):hover span {
+    color: #4267B2; /* 第1个按钮悬停时文字颜色 */
+}
+.wrapper .button:nth-child(2):hover span {
+    color: #1DA1F2; /* 第2个按钮悬停时文字颜色 */
+}
+.wrapper .button:nth-child(3):hover span {
+    color: #E1306C; /* 第3个按钮悬停时文字颜色 */
+}
+.wrapper .button:nth-child(4):hover span {
+    color: #333; /* 第4个按钮悬停时文字颜色 */
+}
+.wrapper .button:nth-child(5):hover span {
+    color: #ff0000; /* 第5个按钮悬停时文字颜色 */
+}
+
+.description {
+  margin-top: 1rem; /* 与图标容器的间距 */
+  text-align: center; /* 居中文本 */
+  color: #555; /* 文字颜色 */
+  font-size: 0.9rem; /* 字体大小 */
+  max-width: 600px; /* 最大宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+.description a {
+  color: #1DA1F2; /* 链接颜色 */
+  text-decoration: none;
+}
+.description a:hover {
+  text-decoration: underline;
+}
