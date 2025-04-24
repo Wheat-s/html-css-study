@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); /* 引入Google字体Poppins */
+
+* {
+    margin: 0; /* 清除默认外边距 */
+    padding: 0; /* 清除默认内边距 */
+    box-sizing: border-box; /* 设置盒模型为border-box，包含边框和内边距 */
+    font-family: "Poppins","Arial","Microsoft YaHei","黑体","宋体", sans-serif; /* 设置字体优先级 */
+}
+
+body {
+    display: flex; /* 使用弹性布局 */
+    justify-content: center;  /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh; /* 最小高度为视口高度 */
+    background: url("img.png") no-repeat; /* 设置背景图片，不重复 */
+    background-position: center; /* 背景图片居中显示 */
+}
+
+.wrapper {
+    width: 420px; /* 容器宽度 */
+    background: transparent; /* 背景透明 */
+    border: 2px solid rgba(255, 255, 255, .2); /* 半透明白色边框 */
+    backdrop-filter: blur(20px); /* 背景模糊效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* 盒子阴影 */
+    color: #fff; /* 字体颜色为白色 */
+    border-radius: 10px; /* 边框圆角 */
+    padding: 30px 40px; /* 内边距 */
+}
+
+.wrapper h1 {
+    font-size: 36px; /* 标题字体大小 */
+    text-align: center; /* 标题居中 */
+}
+
+.wrapper .input-box {
+    position: relative; /* 相对定位，方便内部绝对定位元素 */
+    width: 100%; /* 宽度占满父元素 */
+    height: 50px; /* 高度 */
+    /* background: salmon; */ /* 注释掉的背景色，调试用 */
+    margin: 30px 0; /* 上下外边距 */
+}
+
+.input-box input {
+    width: 100%; /* 输入框宽度占满父元素 */
+    height: 100%; /* 高度占满父元素 */
+    background: transparent; /* 背景透明 */
+    border: none; /* 无边框 */
+    outline: none; /* 取消点击时的轮廓线 */
+    border: 2px solid rgba(255, 255, 255, .2); /* 半透明白色边框 */
+    border-radius: 40px; /* 边框圆角 */
+    font-size: 16px; /* 字体大小 */
+    color: #fff; /* 字体颜色为白色 */
+    padding: 20px 45px 20px 20px; /* 内边距，右侧留出图标空间 */
+}
+
+.input-box input::placeholder {
+    color: #fff; /* 输入框占位符颜色为白色 */
+}
+
+.input-box i {
+    position: absolute; /* 绝对定位 */
+    right: 20px; /* 距离右边20px */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%); /* 通过平移实现精确垂直居中 */
+    font-size: 20px; /* 图标大小 */
+}
+
+.wrapper .remember-forgot {
+    display: flex; /* 弹性布局 */
+    justify-content: space-between; /* 两端对齐 */
+    font-size: 14.5px; /* 字体大小 */
+    margin: -15px 0 15px; /* 上负外边距，调整位置 */
+}
+
+.remember-forgot label input {
+    accent-color: #fff; /* 复选框选中颜色 */
+    margin-right: 3px; /* 右边距，分隔复选框和文字 */
+}
+
+.remember-forgot a {
+    color: #fff; /* 链接颜色为白色 */
+    text-decoration: none; /* 无下划线 */
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;  /* 悬停时显示下划线 */
+}
+
+.wrapper .btn {
+    width: 100%; /* 按钮宽度占满父元素 */
+    height: 45px; /* 按钮高度 */
+    background: #fff; /* 背景白色 */
+    border: none; /* 无边框 */
+    outline: none; /* 无轮廓线 */
+    border-radius: 40px; /* 圆角按钮 */
+    cursor: pointer; /* 鼠标指针为手型 */
+    font-size: 16px; /* 字体大小 */
+    color: #333; /* 字体颜色为深灰 */
+    font-weight: 600; /* 字体加粗 */
+}
+
+.wrapper .register-link {
+    font-size: 14.5px; /* 字体大小 */
+    text-align: center; /* 居中 */
+    /* margin-top: 20px; */ /* 注释掉的上边距 */
+    margin: 20px 0 15px; /* 上下外边距 */
+}
+
+.register-link  p a {
+    color: #fff; /* 链接颜色为白色 */
+    text-decoration: none; /* 无下划线 */
+    font-weight: 600; /* 字体加粗 */
+}
+
+.register-link  p a:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
+
+.footer-note {
+    position: fixed; /* 固定在页面底部 */
+    bottom: 20px; /* 距离底部 20px */
+    left: 50%; /* 居中对齐的关键 */
+    transform: translateX(-50%); /* 精准水平居中 */
+    background-color: rgba(0, 0, 0, 0.3); /* 半透明背景 */
+    padding: 8px 16px; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+    color: #f0f0f0; /* 字体颜色柔和 */
+    font-size: 12px; /* 字体略小 */
+    z-index: 10; /* 保证不被遮挡 */
+}
+
+.footer-note a {
+    color: #80cfff; /* 链接颜色 */
+    text-decoration: none;
+}
+
+.footer-note a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form in HTML and css</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 登录表单开始 -->
+      <form action="">
+        <!-- 表单标题 -->
+        <h1>Login</h1>
+        <!-- 用户名输入框 -->
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <!-- 密码输入框 -->
+        <div class="input-box">
+          <input type="password" placeholder="Password" required />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <!-- 记住密码和忘记密码 -->
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remenmber me</label>
+          <a href="#">忘记密码</a>
+        </div>
+
+        <!-- 登录按钮 -->
+        <button type="submit" class="btn">Login</button>
+
+        <!-- 注册提示链接 -->
+        <div class="register-link">
+          <p>Don't hove on account? <a href="#">register</a></p>
+        </div>
+      </form>
+      <!-- 登录表单结束 -->
+    </div>
+
+    <footer class="footer-note">
+        本项目来自YouTube博主 <a href="https://www.youtube.com/watch?v=hlwlM4a5rxg" target="_blank">@Codehal</a> 教程，仅供学习使用。
+      </footer>
+  </body>
+</html>
