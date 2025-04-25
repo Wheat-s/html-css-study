@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- 导入css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 导入 font-awesome icon工具包 -->
+    <!-- font-awesome cdn链接地址：https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 创建一个登陆的表单 -->
+        <form action="">
+            <!-- 标题 -->
+            <h1>Login</h1>
+            <!-- 创建一个用户名输入框  -->
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <!-- 创建一个密码输入框 -->
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <!-- 创建一个记住我 / 忘记密码 -->
+            <div class="remenmber-forgot">
+                <label><input type="checkbox">Remenmber Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <!-- 创建登陆按钮 -->
+            <button type="submit" class="btn">Login</button>
+            <!-- 创建一个注册链接 -->
+             <div class="register-link">
+                <p>Dont' have an account? <a href="#">Register</a></p>
+             </div>
+        </form>
+    </div>
+</body>
+</html>
